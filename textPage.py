@@ -57,7 +57,7 @@ def renderPage():
     components.html("""<hr style="height:3px;border:none;color:#333;background-color:#333; margin-bottom: 10px" /> """)
     # st.markdown("### Sentiment Analysis of User-Input Text")
     st.subheader("Sentiment Analysis of User-Input Text")
-    st.text("st.text("""
+    st.text("""
     With this tool, you can easily analyze the sentiment and emotions associated with the text you provide. Follow these simple steps to get detailed analysis results:
 
     <b>Text Entry:</b><br>
@@ -70,8 +70,8 @@ def renderPage():
 
     <b>Get Results:</b><br>
     Once you have entered the text and selected the type of analysis you want, click on the corresponding button to process the information. Within seconds, the tool will display the results of the analysis based on the provided text.
-""")
-)
+    """)
+
     st.text("")
     userText = st.text_input('User Input', placeholder='Input text HERE')
     st.text("")
