@@ -15,12 +15,12 @@ import cv2
 
 
 getEmoji = {
-    "happy" : "😊",
+    "happy" : "😁",
     "neutral" : "😐",
-    "sad" : "😔",
-    "disgust" : "🤢",
+    "sad" : "☹️",
+    "disgust" : "😖",
     "surprise" : "😲",
-    "fear" : "😨",
+    "fear" : "😱",
     "angry" : "😡",
 }
     
@@ -36,7 +36,7 @@ def showEmotionData(emotion, topEmotion, image, idx):
              lambda kv:(kv[1], kv[0]))
                 
     st.components.v1.html("""
-                                <h3 style="color: #ef4444; font-family: Source Sans Pro, sans-serif; font-size: 20px; margin-bottom: 0px; margin-top: 0px;">Person detected {}</h3>
+                                <h3 style="color: #1c244b; font-family: Source Sans Pro, sans-serif; font-size: 20px; margin-bottom: 0px; margin-top: 0px;">Person detected {}</h3>
                                 """.format(idx), height=30)
     col1, col2, col3 = st.columns([3,1,2])
     
@@ -65,7 +65,7 @@ def printResultHead():
     st.write("")
     st.write("")
     st.components.v1.html("""
-                                <h3 style="color: #0ea5e9; font-family: Source Sans Pro, sans-serif; font-size: 26px; margin-bottom: 10px; margin-top: 60px;">Result</h3>
+                                <h3 style="color: #292929; font-family: Source Sans Pro, sans-serif; font-size: 26px; margin-bottom: 10px; margin-top: 60px;">Result</h3>
                                 <p style="color: #57534e; font-family: Source Sans Pro, sans-serif; font-size: 16px;">Find below the sentiments we found in your given image. What do you think about our results?</p>
                                 """, height=150)
     
@@ -152,7 +152,7 @@ def uploadFile():
         
     
 def renderPage():
-    st.title("Sentiment Analysis 😊😐😕😡")
+    st.title("Sentiment Analysis 😁😐☹️😖😲😱😡")
     components.html("""<hr style="height:3px;border:none;color:#333;background-color:#333; margin-bottom: 10px" /> """)
     # st.markdown("### User Input Text Analysis")
     st.subheader("Image Analysis")
