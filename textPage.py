@@ -60,7 +60,7 @@ def renderPage():
     st.text("")
     st.markdown("With this tool, you can easily analyze the sentiment and emotions associated with the text you provide. Follow these simple steps to get detailed analysis results:")
     st.markdown("### Text Entry:")
-    st.markdown("Instructions: In the field labeled 'Input text HERE', enter the text you wish to analyze. It can be a sentence, a paragraph, or even an entire article.")
+    st.markdown("It can be a sentence, a paragraph, or even an entire article.")
     st.markdown("### Type of Analysis:")
     st.markdown("Instructions: Choose from the available analysis options. Each option provides a different perspective on the sentiments and emotions of the text.")
     st.markdown("- Positive/Negative/Neutral - TextBlob: This analysis will classify the text into one of these three categories, indicating whether the overall tone is positive, negative, or neutral.")
