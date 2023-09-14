@@ -59,7 +59,7 @@ def renderPage():
     st.subheader("Sentiment Analysis of User-Input Text")
     st.text("")
     st.text("")
-    userText = st.text_input('User Input', placeholder='Input text HERE')
+    userText = st.text_input('In the field labeled "Input text HERE", enter the text you wish to analyze. ', placeholder='Input text HERE')
     st.text("")
     type = st.selectbox(
      'Type of analysis',
