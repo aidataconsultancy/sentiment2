@@ -62,7 +62,7 @@ def renderPage():
     userText = st.text_input('In the field labeled "Input text HERE", enter the text you wish to analyze. ', placeholder='Input text HERE')
     st.text("")
     type = st.selectbox(
-     'Type of analysis',
+     'Choose from the available analysis options. Each option provides a different perspective on the sentiments and emotions of the text.',
      ('Positive/Negative/Neutral - TextBlob', 'Happy/Sad/Angry/Fear/Surprise - text2emotion'))
     st.text("")
     if st.button('Predict'):
