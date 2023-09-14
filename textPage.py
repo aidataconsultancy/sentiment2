@@ -57,21 +57,7 @@ def renderPage():
     components.html("""<hr style="height:3px;border:none;color:#333;background-color:#333; margin-bottom: 10px" /> """)
     # st.markdown("### Sentiment Analysis of User-Input Text")
     st.subheader("Sentiment Analysis of User-Input Text")
-    st.text("""
-    With this tool, you can easily analyze the sentiment and emotions associated with the text you provide. Follow these simple steps to get detailed analysis results:
-
-    <b>Text Entry:</b><br>
-    <i>Instructions:</i> In the field labeled "Input text HERE," enter the text you wish to analyze. It can be a sentence, a paragraph, or even an entire article.
-
-    <b>Type of Analysis:</b><br>
-    <i>Instructions:</i> Choose from the available analysis options. Each option provides a different perspective on the sentiments and emotions of the text.
-    - <i>Positive/Negative/Neutral - TextBlob:</i> This analysis will classify the text into one of these three categories, indicating whether the overall tone is positive, negative, or neutral.
-    - <i>Happy/Sad/Angry/Fear/Surprise - text2emotion:</i> This analysis delves deeper into the specific emotions present in the text. It will identify if the content reflects emotions of happiness, sadness, anger, fear, or surprise.
-
-    <b>Get Results:</b><br>
-    Once you have entered the text and selected the type of analysis you want, click on the corresponding button to process the information. Within seconds, the tool will display the results of the analysis based on the provided text.
-    """)
-
+    st.text("")
     st.text("")
     userText = st.text_input('User Input', placeholder='Input text HERE')
     st.text("")
