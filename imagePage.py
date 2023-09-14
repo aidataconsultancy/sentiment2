@@ -97,7 +97,7 @@ def clickImage():
         st.text(stringio)
 
 def uploadFile():
-    uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg"])
+    uploaded_file = st.file_uploader("Upload an image", type=[ "png", "jpg", "jpeg"])
     print("Uploaded File :", uploaded_file)
     if uploaded_file is not None:
         content = Image.open(uploaded_file)
